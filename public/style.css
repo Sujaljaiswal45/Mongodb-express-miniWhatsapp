@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9edef;
+    color: #111b21;
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #075e54;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+/* Main chat container */
+.Chat {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual chat card */
+/* Matches your existing class="Chat" */
+.chat {
+    max-width: 550px;
+    margin: 0 auto 20px;
+    padding: 18px;
+    background-color: #d9fdd3;
+    border-radius: 12px 12px 4px 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    overflow-wrap: anywhere;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.Chat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Sender and receiver information */
+.Chat > p {
+    color: #667781;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+/* Message text */
+.Chat div p {
+    color: #111b21;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .chat-container {
+        padding: 12px;
+    }
+
+    .Chat {
+        padding: 14px;
+        margin-bottom: 15px;
+    }
+}
